@@ -1,0 +1,282 @@
+:root {
+  --primary: #1a73e8;
+  --primary-dark: #0d47a1;
+  --primary-light: #4285f4;
+  --secondary: #00acc1;
+  --secondary-light: #80deea;
+  --secondary-dark: #007c91;
+  --background: #ffffff;
+  --background-alt: #f5f5f5;
+  --text-primary: #333333;
+  --text-secondary: #757575;
+  --success: #34a853;
+  --warning: #fbbc05;
+  --danger: #ea4335;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+  background-color: var(--background-alt);
+  line-height: 1.6;
+}
+
+/* Navbar styling */
+.navbar {
+  background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.7rem 1rem;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  transition: var(--transition);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+/* Cards styling */
+.card {
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+  overflow: hidden;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  font-weight: 600;
+  border-bottom: none;
+  padding: 1.25rem 1.5rem;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Custom header backgrounds */
+.bg-primary {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%) !important;
+}
+
+.bg-secondary {
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 100%) !important;
+}
+
+.bg-success {
+  background: linear-gradient(135deg, var(--success) 0%, #2d8e47 100%) !important;
+}
+
+.bg-info {
+  background: linear-gradient(135deg, var(--secondary-light) 0%, var(--secondary) 100%) !important;
+}
+
+.bg-light {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
+}
+
+/* Button styling */
+.btn {
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  padding: 0.5rem 1.25rem;
+  transition: var(--transition);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.875rem;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--primary) 0%, var(--primary-dark) 100%);
+  border: none;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background: linear-gradient(90deg, var(--primary-dark) 0%, var(--primary) 100%);
+  box-shadow: 0 4px 10px rgba(26, 115, 232, 0.3);
+}
+
+.btn-secondary {
+  background: linear-gradient(90deg, var(--secondary) 0%, var(--secondary-dark) 100%);
+  border: none;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+  background: linear-gradient(90deg, var(--secondary-dark) 0%, var(--secondary) 100%);
+  box-shadow: 0 4px 10px rgba(0, 172, 193, 0.3);
+}
+
+.btn-info {
+  background: linear-gradient(90deg, var(--secondary-light) 0%, var(--secondary) 100%);
+  border: none;
+  color: white;
+}
+
+.btn-info:hover, .btn-info:focus {
+  background: linear-gradient(90deg, var(--secondary) 0%, var(--secondary-light) 100%);
+  box-shadow: 0 4px 10px rgba(128, 222, 234, 0.3);
+  color: white;
+}
+
+/* Form styling */
+.form-control, .form-select {
+  border-radius: var(--border-radius);
+  padding: 0.75rem 1rem;
+  border: 1px solid #e0e0e0;
+  transition: var(--transition);
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.25rem rgba(26, 115, 232, 0.25);
+}
+
+label.form-label {
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+/* Badge styling */
+.badge {
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 30px;
+}
+
+/* Home page jumbotron */
+.jumbotron {
+  background: linear-gradient(135deg, rgba(26, 115, 232, 0.1) 0%, rgba(0, 172, 193, 0.1) 100%);
+  padding: 4rem 2rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 2rem;
+}
+
+.jumbotron .display-4 {
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.jumbotron .lead {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+}
+
+/* Graphical password selector */
+.graphical-password-container {
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--box-shadow);
+}
+
+.point-marker {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.7);
+}
+
+/* Additional utilities */
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.text-secondary {
+  color: var(--secondary) !important;
+}
+
+.bg-gradient-primary-light {
+  background: linear-gradient(135deg, rgba(26, 115, 232, 0.1) 0%, rgba(66, 133, 244, 0.1) 100%);
+}
+
+/* Dashboard stats cards */
+.stat-card {
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--box-shadow);
+  color: white;
+  height: 100%;
+  transition: var(--transition);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.stat-card h5 {
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+/* Admin dashboard */
+.admin-dashboard .card {
+  margin-bottom: 1.5rem;
+}
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.table th {
+  font-weight: 600;
+  color: var(--text-secondary);
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.table td, .table th {
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+/* Feedback history cards */
+.feedback-card {
+  border-left: 4px solid var(--primary);
+  background-color: white;
+  margin-bottom: 1rem;
+  transition: var(--transition);
+}
+
+.feedback-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--box-shadow);
+}
+
+/* Loading spinner */
+.spinner-border {
+  color: var(--primary);
+}
+
+/* Charts */
+canvas {
+  max-width: 100%;
+} 
